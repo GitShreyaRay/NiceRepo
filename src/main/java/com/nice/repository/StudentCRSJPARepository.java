@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.nice.entity.*;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Long>{
+public interface StudentCRSJPARepository extends JpaRepository<Student, Long>{
 	
 	
 

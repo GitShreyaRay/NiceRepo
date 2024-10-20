@@ -16,17 +16,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nice.entity.Student;
-import com.nice.repository.StudentRepository;
+import com.nice.repository.StudentCRSJPARepository;
 
 @RestController
 @RequestMapping("/crs/students")
 public class StudentRestController {
 
 	@Autowired
-	private final StudentRepository studentRepository;
+	private final StudentCRSJPARepository studentRepository;
 	private static final Logger log = LoggerFactory.getLogger(StudentRestController.class);
 
-	public StudentRestController(StudentRepository studentRepository) {
+	public StudentRestController(StudentCRSJPARepository studentRepository) {
 		this.studentRepository = studentRepository;
 	}
 
