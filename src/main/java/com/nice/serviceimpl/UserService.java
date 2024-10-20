@@ -1,4 +1,4 @@
-package com.nice.service;
+package com.nice.serviceimpl;
 
 import org.springframework.stereotype.Service;
 
